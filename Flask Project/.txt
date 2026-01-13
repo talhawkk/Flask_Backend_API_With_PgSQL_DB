@@ -1,0 +1,22 @@
+/orders
+Body:
+{
+    "items": [
+        {"product_id": 1, "quantity": 2},
+        {"product_id": 2, "quantity": 1}
+    ]
+}
+
+
+/payments
+{
+    "order_id": 1,
+    "payment_method": "card"
+}
+
+
+monthly report
+GET /reports/monthly-sales?year=2026&month=1
+
+audit urll parameter
+audit-logs
