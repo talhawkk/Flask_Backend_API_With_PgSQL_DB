@@ -7,7 +7,11 @@
 ## 🔐 AUTH
 
 - **POST** `/register` — Body: `{ "email", "password", "role" }` — Register user
+  - Email must be valid format (e.g., user@example.com)
+  - Password must be at least 6 characters
+  - Role defaults to "user" if not provided
 - **POST** `/login` — Body: `{ "email", "password" }` — Get token
+  - Email must be valid format
 - **POST** `/logout` — Header: `Authorization: Bearer <token>` — Logout
 - **GET** `/` — `[Token optional]` — Home
 
